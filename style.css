@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 4px 3px #e2e0e0;
+}
+.left i {
+    font-size: 2rem;
+    margin: 4px 10px;
+}
+
+.mid {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    text-align: center;
+}
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 6%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.heading{
+    width: 75%;
+    text-align: start;
+    margin: 12px 0;
+}
+.imageContainer{
+    /* border: 2px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin: 15px 0;
+
+}
+.img1,.img2,.img3{
+    width: 400px;
+    height: 250px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-blend-mode: darken;
+    cursor: pointer;
+}
+.img1{
+    background:rgb(0 0 0 / 26%) url('image/img1.jpg') no-repeat center center / cover;
+    border-radius: 15px 0px 0 15px;
+}
+.img2{
+    background: rgb(0 0 0 / 26%) url('image/img2.jpg') no-repeat center center / cover;
+
+}
+.img3{
+    background:rgb(0 0 0 / 26%) url('image/img3.jpg') no-repeat center center / cover;
+    border-radius: 0px 15px 15px 0px;
+}
+.arrow{
+    display: none;
+    text-align: end;
+    font-size: 1.5rem;
+}
+
+.img1:hover .arrow,.img2:hover .arrow,.img3:hover .arrow{
+    width: 600px;
+    display: block;
+}
